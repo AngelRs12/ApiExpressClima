@@ -19,10 +19,12 @@ app.use(express.urlencoded({extended : true}));
 app.set('port', config.app.port);
 
 
-app.use('/api/ciudad',ciudades);
-app.use('/api/alertas',alertas);
-app.use('/api/condicion',condicion);
-app.use('/api/historial;',historial);
-app.use('/api/prediccion',prediccion);
+
+
+app.use('/ciudad',ciudades);
+app.use('/alertas',alertas);
+app.use('/condicion',condicion);
+app.use('/historial;',historial);
+app.use('/prediccion',prediccion);
 app.use(error);
 module.exports = app;
