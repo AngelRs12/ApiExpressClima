@@ -12,7 +12,7 @@ const error = require('./red/error');
 const app = express();
 
 // Establece el puerto desde la configuración
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
